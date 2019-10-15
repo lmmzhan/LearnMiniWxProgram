@@ -3,8 +3,7 @@
 <button size='mini'>点击</button>
 <!-- 小程序数据绑定，{{}}-> Mustache -->
 <view>wolai{{name}} </view>
-<view>多大了{{age+10}}</view>
-<view wx:for='{{students}}'>{{item.name}}--{{item.age}}</view>
+
 <!-- 事件监听 -->
 <view>当前计数：{{counter}}</view>
 <button size='mini' bindtap='handleBtnClick'>+</button>

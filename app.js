@@ -27,7 +27,7 @@ App({
     // 2、获取用户的信息，并且获取后，将信息传递给服务器
     wx.getUserInfo({
       success:function(res){
-        console.log(res)
+        // console.log(res)
       }
     })
 
