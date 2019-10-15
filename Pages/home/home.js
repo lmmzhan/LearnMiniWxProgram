@@ -1,5 +1,11 @@
 // Pages/home/home.js
+
+const app = getApp()
+console.log(app.globalData.name)
+console.log(app.globalData.age)
+
 Page({
+
   data: {
     name: 'xiao北',
     age: 18,
@@ -42,6 +48,11 @@ Page({
       counter: this.data.counter -= 1
     })
 
+  },
+
+// 获取授权信息
+  handleGetUserInfo(enent) {
+    console.log(enent)
   }
 
 })
