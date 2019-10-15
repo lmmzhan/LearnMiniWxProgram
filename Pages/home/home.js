@@ -10,10 +10,11 @@ Page({
   data: {
     name: 'xiao北',
     age: 18,
-    list: [],
+    // list: [],
     counter: 0
 
   },
+  // 数据+
   handleBtnClick() {
     // 1.错误做法，页面不会刷新
     //  this.data.counter+=1
@@ -23,6 +24,7 @@ Page({
       counter: this.data.counter += 1
     })
   },
+  // 数据 —
   handleSubtraction() {
 
     this.setData({
@@ -31,6 +33,7 @@ Page({
 
   },
 
+//........... 1.监听页面的生命周期函数...............
   //  页面被加载出来
   onLoad() {
     console.log('onLoad')
@@ -40,10 +43,10 @@ Page({
       success: (res) => {
         console.log('wolaole:')
         console.log(res)
-        const data = res.data.data.list;
-        this.setData({
-          // list: data
-        })
+        // const data = res.data.data.list;
+        // this.setData({
+        //   list: data
+        // })
 
 
       }
