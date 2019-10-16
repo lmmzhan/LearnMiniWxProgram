@@ -1,0 +1,9 @@
+<!--Pages/text/text.wxml-->
+<!-- 1、selectabl e长安选中功能 -->
+<text selectable='true'>我是谁 你是我的神\n</text>
+<!-- 2、space 空格间距 -->
+<text space='nbsp'>我是谁 你是我的神\n</text>
+<text space='ensp'>我是谁 你是我的神\n</text>
+<text space='emsp'>我是谁 你是我的神\n</text>
+<!-- 3、decode 是否解码文本 -->
+<text decode='{{true}}'>5&gt;3</text>

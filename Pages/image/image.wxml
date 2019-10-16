@@ -1,0 +1,27 @@
+<!--Pages/image/image.wxml-->
+<text>Pages/image/image</text>
+<!-- 重点：
+1）、Image 组件可以写成点标签，也可以写成双标签;
+   单<image/>   双<image> </image>
+2）、Image组件默认有自己的大小;   320*240
+3）、imagne 组件是一个行内块级元素（inline-block）
+ -->
+<!-- 2、src 本地地址（相对路径/绝对路径）/远程地址 -->
+<image src='../../assets/home/add.png' />
+<image src='/assets/home/account_cer.png' />
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'></image>
+
+<!-- 3、补充 相册中的图片 -->
+<button bindtap='handleChooseAlbum'>选中图片</button>
+<image src='{{imagePath}}'></image>
+
+<!-- 4、bindload 当图片载入完毕时触发 -->
+<!-- lazy-load  图片懒加载，在即将进入一定范围（上下三屏）时才开始加载-->
+
+<!-- <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' bindload='handleImageLoad'></image> -->
+
+<image wx:for='{{1}}' src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' bindload='handleImageLoad' lazy-load='{{true}}'></image>
+
+<!-- 5、show-menu-by-longpress -->
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' show-menu-by-longpress></image>
+

@@ -1,0 +1,16 @@
+<!--Pages/button/button.wxml-->
+<button>按钮</button>
+<!-- 1、size -->
+<button size='mini'>按钮</button>
+<!-- 2、type -->
+<button size='mini' type='primary'>可以改变背景色</button>
+<button size='mini' type='defult'>默认</button>
+<button size='mini' type='warn'>警告</button>
+<!-- 3、plain 镂空 -->
+<button size='mini' plain='{{true}}'>镂空</button>
+<!-- 4、plain 不可点击 -->
+<button size='mini' disabled='{{true}}'>不可点击</button>
+<!-- 5、loading 加载 -->
+<button size='mini' loading='{{isLoading}}'>加载</button>
+<!-- 6、hover-class -->
+<button size='mini' hover-class='pressed'>点击的背景</button>
