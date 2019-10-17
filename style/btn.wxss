@@ -1,0 +1,6 @@
+.btn{
+  width: 600rpx;
+  height: 100rpx;
+  color: red;
+  display: inline-block;
+}
