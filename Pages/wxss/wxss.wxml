@@ -1,0 +1,17 @@
+<!--Pages/wxss/wxss.wxml-->
+<text>Pages/wxss/wxss.wxml</text>
+<!-- 1、行内样式 -->
+<view style='color:red ; font-size:15px;'>关云长</view>
+<!-- 2、页内样式 -->
+<view class='box'>顺气</view>
+<!-- 3、全局样式 -->
+<view class='container'>玉麒麟</view>
+
+<!-- 三种样式作用于一个组件 -->
+<view style='background:yellow ;' class='content' >李连杰</view>
+
+<view class='box1'></view>
+<view class='box2'></view>
+
+<view class='content1'>曹孟德</view>
+<view class='content2'>刘玄德</view>

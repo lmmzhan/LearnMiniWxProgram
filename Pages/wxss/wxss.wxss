@@ -1,0 +1,27 @@
+/* Pages/wxss/wxss.wxss */
+.box{
+  color: green;
+  font-size: 20px;
+}
+.content{
+  background: red ! important;
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+.box2{
+  width: 200rpx;
+  height: 200rpx;
+  background: blueviolet;
+}
+
+.content1{
+  font-size: 32px;
+}
+
+.content2{
+  font-size: 64rpx;
+}

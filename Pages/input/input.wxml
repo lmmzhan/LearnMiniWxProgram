@@ -1,0 +1,26 @@
+<!--Pages/input/input.wxml-->
+<text>Pages/input/input.wxml</text>
+<!-- 1、input的基本使用 -->
+<input/>
+<!-- 2、value  input 的默认值 -->
+<input value='路漫漫其修远兮，吾将上下而求索'/>
+<!--3、 type 决定键盘类型，文本text，数字number，身份证idcard 带小数点的数字键盘digi t-->
+<!-- number  数字输入键盘 -->
+<input type='number'/>
+<!-- idcard 身份证输入键盘 -->
+<input type='idcard'/>
+<!--4、 password 暗文 -->
+<input password='true' placeholder='密码'></input>
+<!-- 5、placeholder 占位文字 -->
+<input placeholder='提示语的写入'></input>
+
+
+<!-- 6、bindinput 键盘输入时触发 -->
+<input bindinput='handleInput'
+       bindfocus="handlefocus"
+       bindblur='handleBlur'></input>
+
+<!-- bindfocus 输入框聚焦时触发
+<input bindfocus="handlefocus"></input>
+<!-- bindblur 输入框失去焦点时触发 -->
+<!-- <input bindblur='handleBlur'></input> --> -->

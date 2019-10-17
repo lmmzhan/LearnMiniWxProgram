@@ -1,0 +1,28 @@
+/* Pages/scroll/scroll.wxss */
+.container1{
+  background: purple;
+  /* 一行显示 */
+  white-space: nowrap;
+}
+
+.item1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* 不加这句，一个元素占 */
+  display: inline-block;
+}
+
+.container2{
+  background: orange;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.item2{
+   height: 100px;
+   background: green;
+   margin: 10px;
+}
