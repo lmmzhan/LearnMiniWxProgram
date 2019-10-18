@@ -1,0 +1,9 @@
+<!--Pages/wxml/wxml.wxml-->
+<text>Pages/wxml/wxml.wxml</text>
+<view>{{message}}</view>
+<view>{{message}} {{contnet}}</view>
+<view>{{age>18 ? '成年人':'未成年'}}</view>
+<view>{{nowTime}}</view>
+<button bindtap='selectSwitch'>切换颜色</button>
+<view class='font_style_unselect {{selsetedFlag ? "font_style_select" : "" }}' >对酒当歌，人生几何</view>
+<view class='{{selsetedFlag ? "font_style_select" : "font_style_unselect" }}' >对酒当歌，人生几何</view>

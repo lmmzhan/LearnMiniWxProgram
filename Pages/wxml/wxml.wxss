@@ -1,0 +1,11 @@
+/* Pages/wxml/wxml.wxss */
+
+.font_style_unselect{
+  font-size: 40rpx;
+  color: purple;
+}
+
+.font_style_select{
+  font-size: 60rpx;
+  color: red;
+}
