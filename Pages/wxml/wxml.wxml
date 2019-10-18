@@ -7,3 +7,32 @@
 <button bindtap='selectSwitch'>切换颜色</button>
 <view class='font_style_unselect {{selsetedFlag ? "font_style_select" : "" }}' >对酒当歌，人生几何</view>
 <view class='{{selsetedFlag ? "font_style_select" : "font_style_unselect" }}' >对酒当歌，人生几何</view>
+<!-- 02课程 wxml语法-条件判断 -->
+
+<view wx:if="{{fase}}">武松</view>
+<view wx:if="{{true}}">潘金莲</view>
+<!-- wx:if/wx:elif/wx:else -->
+<button size='mini' bindtap='scoreSwitch'> 分数+6</button>
+<button size='mini' bindtap='jianSwitch'> 分数-6</button>
+
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良</view>
+<view wx:elif="{{score>=70}}">普通</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+<view>................</view>
+<!-- hidden ,相当于invisible 虽然不显示，却依然存在，
+     wx:if，相当于gone,既不现实又不存在
+    选择：
+      如果显示和隐藏切换的很频繁，选择用hidden
+      如果显示和隐藏切换的次数很少，建议用wx:if
+ -->
+<view hidden='{{true}}'> 我显示的三方 hidden</view>
+<view wx:if="{{fase}}">  打分卡连接 wx:if 用着  </view>
+
+<!-- 都来显示吧 -->
+<view hidden='{{fase}}'> 我显示的三方 hidden</view>
+<view wx:if="{{true}}">  打分卡连接 wx:if 用着  </view>
+
+
+

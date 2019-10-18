@@ -9,26 +9,40 @@ Page({
     contnet: '霸气外露，习大大出席开幕会',
     age: 30,
     nowTime: new Date().toLocaleString(),
-    selsetedFlag: false
+    selsetedFlag: false,
+    score: 56,
   },
-  
+
   /**
    * 时间实时的显示
    */
-  onLoad(){
-    setInterval(()=>{
-     
+  onLoad() {
+    setInterval(() => {
+
       this.setData({
         nowTime: new Date().toLocaleString()
       })
 
-    },1000)
+    }, 1000)
   },
 
   selectSwitch() {
     console.log('点击了。。。')
     this.setData({
       selsetedFlag: !this.data.selsetedFlag
+    })
+  },
+
+
+  scoreSwitch() {
+    this.setData({
+      score: this.data.score + 6
+    })
+  },
+
+  jianSwitch() {
+    this.setData({
+      score: this.data.score - 6
     })
   }
 
