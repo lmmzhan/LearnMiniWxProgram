@@ -1,0 +1,4 @@
+<template name='contentItem'>
+  <view>您好小程序</view>
+  <button size='mini'>来啊，复用啊,工具</button>
+</template>

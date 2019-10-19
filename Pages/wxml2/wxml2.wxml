@@ -1,6 +1,8 @@
 <!--Pages/wxml2/wxml2.wxml-->
 <text>Pages/wxml2/wxml2.wxml</text>
 
+<!-- include头布局的引用 -->
+<include src="/wxml/header.wxml"/>
 
 <!-- 列表渲染 -->
 <!-- 1、wx:for 循环 数组/字符串/数字-->
@@ -44,7 +46,9 @@
 <view wx:for='{{movies}}' wx:for-item='movie' wx:for-index='i'>{{movie}} {{i}} </view>
 <view>.........分割线2222。。。。。。。</view>
 <view wx:for='{{numbs}}'>{{item}}</view>
+
 <view>.........分割线。。3333。。。。。</view>
+
 <block wx:for='{{numbs}}'>
   <view wx:for='{{item}}'>{{item}}</view>
 </block>
@@ -73,3 +77,43 @@
   <view wx:for='{{lenters}}' wx:for='{{item}}'> {{item}}
   </view>
 </view> -->
+
+<!-- template 为了进行代码复用,不引用时不渲染-->
+<!-- 可以显示 -->
+<!-- <template name='contentItem'>
+  <view>您好小程序</view>
+  <button size='mini'>来啊，复用啊</button>
+</template>
+
+<template is='contentItem' /> -->
+
+<!-- 不显示，找不出原因 -->
+
+<!-- <template name='temtest'>
+   <view>{{xinming}}</view>
+   <button size='mini'> {{nickName}}</button>
+</template>
+<template is="temtest" date="{{xinming:'武松',nickName:'行者'}}"/>
+<template is='temtest' date='{{xinming:"鲁智深",nickName:"花和尚"}}'/> -->
+
+<!-- 不显示,找不出原因 -->
+<template name="conitem">
+  <button size='mini'>{{btnShow}}</button>
+  <view>{{vshow}}</view>
+</template>
+<template is="conitem" date="{{btnShow:'咋不显示',vshow: 'sdsds' }}"/>
+
+<!-- import 的引用-->
+<import src='/wxml/template.wxml'/>
+<template is='contentItem'/>
+
+<!-- include 的引用 -->
+<include src='/wxml/footer.wxml'/>
+<!-- 总结：
+import 导入：
+ 1、主要导入template；  2、特点：不能进行递归导入；
+include 引入：
+ 1、将公共的wxml文件抽取到一个文件中；2、特点：不能导入template/wxs，但是可以递归导入
+
+
+ -->
