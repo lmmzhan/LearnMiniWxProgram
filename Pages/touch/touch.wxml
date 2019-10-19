@@ -1,0 +1,30 @@
+<!--Pages/touch/touch.wxml-->
+<text>Pages/touch/touch.wxml</text>
+
+<!-- 1、事件处理的回顾 -->
+<view bindtap='handleBtnClick'>曹操</view>
+<view bind:tap='handleBtnClick'>刘备</view>
+<view catchtap='handleBtnClick'>孙权</view>
+<view catch:tap='handleBtnClick'>汉献帝</view>
+
+<!-- 2、常见的一些事件 -->
+<view class='box'
+      bind:touchstart='handlTouchstart'
+      bind:touchmove='handleTouchmove'
+      bind:touchend='handleTouchend'
+      bind:tap='handleTag'
+      bind:longpress='handleLongpress'
+>三国</view>
+
+
+<button size='mini' bindtap='handleEventClick'>群雄涿鹿</button>
+<!-- 在点击小的“里面的人呢”，不仅会触发小的的点击事件，还会触发大的“外面的世界”的点击事件。此时，有个参数不同：
+
+"里面的人呢"  的按钮的参数currentTarget的id:"innerId",并且target中的id:"innerId" ，都一样。
+“外面的世界”的按钮的参数currentTarget的id:"outterId",而target中的id:"innerId"
+
+currentTarget，表示触发事件的view
+target，表示 产生事件的view -->
+<view class='outer' id='outterId' bindtap='handleEventOuter'>外面的世界
+  <view class='inner' id='innerId' bindtap='handleEventInner'>里面的人呢</view>
+</view>

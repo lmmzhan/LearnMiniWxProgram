@@ -1,0 +1,22 @@
+/* Pages/touch/touch.wxss */
+
+.box{
+  background: yellow;
+  width:200rpx;
+  height: 200rpx
+
+}
+
+.outer{
+  background: red;
+  width: 400rpx;
+  height: 400rpx;
+  color: wheat
+}
+
+.inner{
+  background: blue;
+  width: 200rpx;
+  height: 200rpx;
+  color: wheat
+}
