@@ -1,0 +1,20 @@
+// JS代码
+var message = 'hollo world';
+var name = 'coderwhy';
+
+var sum = function (num1, num2) {
+  return num1 + num2
+  // return 'hello 小程序'
+}
+
+function test() {
+  return 'test_function'
+}
+
+//commonjs 的模块化导出方法  不能用： <!-- -->
+
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum
+}

@@ -1,8 +1,7 @@
 <!--Pages/wxml2/wxml2.wxml-->
 <text>Pages/wxml2/wxml2.wxml</text>
-
 <!-- include头布局的引用 -->
-<include src="/wxml/header.wxml"/>
+<include src="/wxml/header.wxml" />
 
 <!-- 列表渲染 -->
 <!-- 1、wx:for 循环 数组/字符串/数字-->
@@ -96,24 +95,23 @@
 <template is="temtest" date="{{xinming:'武松',nickName:'行者'}}"/>
 <template is='temtest' date='{{xinming:"鲁智深",nickName:"花和尚"}}'/> -->
 
-<!-- 不显示,找不出原因 -->
-<template name="conitem">
-  <button size='mini'>{{btnShow}}</button>
-  <view>{{vshow}}</view>
+<template name="contentItem2">
+  <button size='mini'>{{btnText}}</button>
+  <view>{{content}}</view>
 </template>
-<template is="conitem" date="{{btnShow:'咋不显示',vshow: 'sdsds' }}"/>
+<template is='contentItem2' data="{{btnText:'莉莉安静空间看看',content:'地方终于出来了'}}"/>
+
 
 <!-- import 的引用-->
-<import src='/wxml/template.wxml'/>
-<template is='contentItem'/>
+<import src='/wxml/template.wxml' />
+<template is='contentItem' />
 
 <!-- include 的引用 -->
-<include src='/wxml/footer.wxml'/>
+<include src='/wxml/footer.wxml' />
 <!-- 总结：
 import 导入：
  1、主要导入template；  2、特点：不能进行递归导入；
 include 引入：
  1、将公共的wxml文件抽取到一个文件中；2、特点：不能导入template/wxs，但是可以递归导入
-
 
  -->

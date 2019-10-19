@@ -1,5 +1,6 @@
 {
   "pages": [
+    "Pages/wxs/wxs",
     "Pages/wxml2/wxml2",
     "Pages/wxml/wxml",
     "Pages/wxss/wxss",
@@ -21,18 +22,20 @@
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "selectedColor":"#ff4777",
-    "list": [{
-      "pagePath": "Pages/home/home",
-      "text": "首页",
-      "iconPath": "assets/home/iv_complete_nor.png",
-      "selectedIconPath": "assets/home/iv_complete_sel.png"
-    },
-    {
-      "pagePath": "Pages/mine/mine",
-      "text": "个人",
-      "iconPath": "assets/home/iv_evaluate_nor.png",
-      "selectedIconPath": "assets/home/iv_evaluate_sel.png"
-    }]
+    "selectedColor": "#ff4777",
+    "list": [
+      {
+        "pagePath": "Pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/home/iv_complete_nor.png",
+        "selectedIconPath": "assets/home/iv_complete_sel.png"
+      },
+      {
+        "pagePath": "Pages/mine/mine",
+        "text": "个人",
+        "iconPath": "assets/home/iv_evaluate_nor.png",
+        "selectedIconPath": "assets/home/iv_evaluate_sel.png"
+      }
+    ]
   }
 }
