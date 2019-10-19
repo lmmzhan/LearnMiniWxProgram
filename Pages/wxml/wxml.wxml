@@ -27,6 +27,7 @@
       如果显示和隐藏切换的很频繁，选择用hidden
       如果显示和隐藏切换的次数很少，建议用wx:if
  -->
+ 
 <view hidden='{{true}}'> 我显示的三方 hidden</view>
 <view wx:if="{{fase}}">  打分卡连接 wx:if 用着  </view>
 

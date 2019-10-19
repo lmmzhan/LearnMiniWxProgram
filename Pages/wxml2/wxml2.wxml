@@ -1,0 +1,75 @@
+<!--Pages/wxml2/wxml2.wxml-->
+<text>Pages/wxml2/wxml2.wxml</text>
+
+
+<!-- 列表渲染 -->
+<!-- 1、wx:for 循环 数组/字符串/数字-->
+
+<!-- <view wx:for="{{[123,552,565]}}">{{item}}</view>
+<view wx:for="{{'loveisover'}}">{{item}}</view>
+<view wx:for="{{5}}">{{item}}</view> -->
+
+<!-- <view>
+   <button size='mini'>王祖贤</button>
+   <view>张曼玉</view>
+    <text>陈钰琪</text>
+</view> -->
+
+<!-- <view wx:if="{{false}}">
+   <button size='mini'>王祖贤</button>
+   <view>张曼玉</view>
+    <text>陈钰琪</text>
+</view> -->
+<!--  -->
+<!-- <view wx:for="{{3}}">
+   <button size='mini'>林青霞</button>
+   <view>刘嘉玲</view>
+    <text>和其正</text>
+</view> -->
+
+<!--2、 block标签 -->
+<!-- block 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受属性，
+  好处：1、将进行遍历或者判断的内容进行包裹；
+       2、将遍历和判断的属性放在block便签中，不影响普通属性的阅读，提高代码的可读性
+ -->
+<block wx:for="{{2}}">
+  <button size='mini'>王祖贤</button>
+  <view>张曼玉</view>
+  <text>陈钰琪</text>
+</block>
+
+<!-- 3、item index 起名字 -->
+<view wx:for='{{movies}}'>{{item}} {{index}}</view>
+<view>.........分割线。。。。。。。</view>
+<view wx:for='{{movies}}' wx:for-item='movie' wx:for-index='i'>{{movie}} {{i}} </view>
+<view>.........分割线2222。。。。。。。</view>
+<view wx:for='{{numbs}}'>{{item}}</view>
+<view>.........分割线。。3333。。。。。</view>
+<block wx:for='{{numbs}}'>
+  <view wx:for='{{item}}'>{{item}}</view>
+</block>
+<!-- <view>.........分割线。。。。。。。</view>
+<block wx:for='{{numbs}}'>
+  <block wx:for='{{item}}'>
+    <view>{{item}}</view>
+  </block>
+</block> -->
+<!-- 注意：item 中不可以有横杠：“-” -->
+<view>.........分割线66666。。。。。。。</view>
+<block wx:for="{{numbs}}" wx:for-item='outeri'>
+  <block wx:for='{{outeri}}'>
+    <view>{{item}}</view>
+  </block>
+</block>
+<!-- 4、key -->
+<view>.........分割线kekey。。。。。。</view>
+<view>
+  <view wx:for='{{lenters}}' wx:key='{{item}}'> {{item}}
+  </view>
+</view>
+<view>.........分割线for key。。。。。</view>
+<!-- 这样写不对 -->
+<!-- <view>
+  <view wx:for='{{lenters}}' wx:for='{{item}}'> {{item}}
+  </view>
+</view> -->

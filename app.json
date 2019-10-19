@@ -1,5 +1,6 @@
 {
   "pages": [
+    "Pages/wxml2/wxml2",
     "Pages/wxml/wxml",
     "Pages/wxss/wxss",
     "Pages/scroll/scroll",
