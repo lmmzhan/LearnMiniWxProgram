@@ -1,0 +1,5 @@
+<!--components/cpn-prop/cpn-prop.wxml-->
+<!-- <text>components/cpn-prop/cpn-prop.wxml</text> -->
+
+<view class='title titleclass'>{{title}}</view>
+<view class='content'>我是组件的许多内容。。。。</view>

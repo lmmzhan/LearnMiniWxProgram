@@ -3,8 +3,20 @@
 
 <view class='title_box'>{{title}}</view>
 
+<!-- 01（掌握）组件化-自定义组件的过程（19分钟） -->
+<!-- <my-cpn></my-cpn>
+<my-cpn/> -->
+
+<!-- 03（掌握）组件化-组件和页面样式细节（14分钟） -->
 <cpn-style/>
-<my-cpn></my-cpn>
-<my-cpn/>
+
+<!-- 04（掌握）组件化-给组件传递数据和样式（18分钟） -->
+<cpn-prop title='我来给你起名字' titleclass='red'/>
+<cpn-prop title='帝高阳之苗裔兮'  titleclass='green'/>
+<cpn-prop  titleclass='yellow'/>
+
+<!-- 05（掌握）组件化-自定义事件传递数据（11分钟） -->
+<view>当前计数:{{mycount}}</view>
+<cpn-event bind:increment='myIncrement'/>
 
 

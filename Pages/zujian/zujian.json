@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-   
-   "cpn-style":"/components/cpn-style/cpn-style"
+    "cpn-style": "/components/cpn-style/cpn-style",
+    "cpn-prop": "/components/cpn-prop/cpn-prop",
+    "cpn-event": "/components/cpn-event/cpn-event"
   }
 }
