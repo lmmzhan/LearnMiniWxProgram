@@ -23,6 +23,9 @@
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
   },
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn"
+  },
   "tabBar": {
     "selectedColor": "#ff4777",
     "list": [
