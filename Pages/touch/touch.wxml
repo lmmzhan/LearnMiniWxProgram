@@ -61,8 +61,6 @@ target，表示 产生事件的view -->
 
  -->
 
-
-
 <view class='viewouter1' capture-bind:tap='handleCaptureouter1' bindtap='handleBindouter1'>
   <view class='viewcenter2' capture-bind:tap='handleCaptureCenter2' catchtap='handleBindcenter2'>我是中间的2
     <view class='viewinner3' capture-bind:tap='handleCaptureinner3' bindtap='handleBindinner3'>我是内部3

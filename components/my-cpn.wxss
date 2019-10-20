@@ -1,0 +1,11 @@
+/* components/my-cpn.wxss */
+
+.title_box{
+  font-size: 40rpx;
+  /* 加粗 */
+  font-weight: 700;  
+}
+
+.content_box{
+  font-size: 30rpx;
+}

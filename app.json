@@ -1,5 +1,6 @@
 {
   "pages": [
+    "Pages/zujian/zujian",
     "Pages/touch/touch",
     "Pages/wxs/wxs",
     "Pages/wxml2/wxml2",
