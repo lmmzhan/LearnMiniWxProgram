@@ -1,5 +1,10 @@
 <!--Pages/zujian/zujian.wxml-->
 <!-- <text>Pages/zujian/zujian.wxml</text> -->
 
+<view class='title_box'>{{title}}</view>
+
+<cpn-style/>
 <my-cpn></my-cpn>
 <my-cpn/>
+
+

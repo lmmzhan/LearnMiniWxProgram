@@ -1,1 +1,6 @@
 /* Pages/zujian/zujian.wxss */
+
+.title_box{
+  color: red
+}
+

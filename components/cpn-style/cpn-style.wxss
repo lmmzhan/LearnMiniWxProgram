@@ -1,0 +1,10 @@
+/* components/cpn-style/cpn-style.wxss */
+
+.title_box{
+   font-size: 45rpx;
+   font-weight: 700;
+}
+
+.content_box{
+  font-size: 35rpx
+}

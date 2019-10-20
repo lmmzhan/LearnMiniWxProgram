@@ -1,0 +1,5 @@
+<!--components/cpn-style/cpn-style.wxml-->
+<!-- <text>components/cpn-style/cpn-style.wxml</text> -->
+
+<view class='title_box'>{{title}}</view>
+<view class='content_box'>{{content}}</view>
