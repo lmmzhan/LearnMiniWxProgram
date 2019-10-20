@@ -6,6 +6,8 @@ Page({
    */
   data: {
 
+    titles:['衣服','裤子','鞋子']
+
   },
 
   /**
@@ -52,7 +54,41 @@ Page({
   },
   handleEventOuter(event) {
     console.log('外面点击了', event)
-  }
+  },
+
+// 查看传递参数
+  handleItemClick(event){
+    console.log(event)
+  },
+
+//  冒泡和事件捕捉
+// 外部1
+  handleCaptureouter1(){
+    console.log('handleCaptureouter1')
+  },
+  handleBindouter1() {
+    console.log('handleBindouter1')
+  },
+// 中间2
+  handleCaptureCenter2() {
+    console.log('handleCaptureCenter2')
+  },
+  handleBindcenter2() {
+    console.log('handleBindcenter2')
+  },
+
+  // 内部3
+  handleCaptureinner3() {
+    console.log('handleCaptureinner3')
+  },
+  handleBindinner3() {
+    console.log('handleBindinner3')
+  },
+
+
+
+
+
 
 
 })

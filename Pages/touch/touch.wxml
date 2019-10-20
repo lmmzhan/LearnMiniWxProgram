@@ -8,14 +8,9 @@
 <view catch:tap='handleBtnClick'>汉献帝</view>
 
 <!-- 2、常见的一些事件 -->
-<view class='box'
-      bind:touchstart='handlTouchstart'
-      bind:touchmove='handleTouchmove'
-      bind:touchend='handleTouchend'
-      bind:tap='handleTag'
-      bind:longpress='handleLongpress'
->三国</view>
+<view class='box' bind:touchstart='handlTouchstart' bind:touchmove='handleTouchmove' bind:touchend='handleTouchend' bind:tap='handleTag' bind:longpress='handleLongpress'>三国</view>
 
+<!-- 02（掌握）事件-事件对象的解析（23分钟） -->
 
 <button size='mini' bindtap='handleEventClick'>群雄涿鹿</button>
 <!-- 在点击小的“里面的人呢”，不仅会触发小的的点击事件，还会触发大的“外面的世界”的点击事件。此时，有个参数不同：
@@ -27,4 +22,51 @@ currentTarget，表示触发事件的view
 target，表示 产生事件的view -->
 <view class='outer' id='outterId' bindtap='handleEventOuter'>外面的世界
   <view class='inner' id='innerId' bindtap='handleEventInner'>里面的人呢</view>
+</view>
+
+<!--4、事件的传递参数  -->
+
+<!-- <view wx:for='{{titles}}'>
+   <block >
+   <view> {{item}}</view>
+   </block>
+</view> -->
+
+<view class='container'>
+  <block wx:for='{{titles}}' wx:key='{{index}}'>
+    <view class='item' bindtap='handleItemClick' data-index='{{index}}' data-item='{{item}}'>
+      {{item}}
+    </view>
+  </block>
+</view>
+
+<!-- 5、事件的冒泡和捕捉 -->
+<!-- capture-bind:tap  捕获   
+     bindtap 冒泡
+     捕获从外向内，冒泡由内向外
+
+     bind: 一层层传递         capture-bind:tap   bindtap
+     catch: 阻止事件向下传递   capture-catch:tap  catchtap
+
+     注意：bind:tap 必须分开写 ，不能写成bindtap 
+
+     如果都用bind 显示点击绿色的 viewinner3
+
+     handleCaptureouter1
+     handleCaptureCenter2
+     handleCaptureinner3
+     handleBindinner3
+     handleBindcenter2
+     handleBindouter1
+
+ -->
+
+
+
+<view class='viewouter1' capture-bind:tap='handleCaptureouter1' bindtap='handleBindouter1'>
+  <view class='viewcenter2' capture-bind:tap='handleCaptureCenter2' catchtap='handleBindcenter2'>我是中间的2
+    <view class='viewinner3' capture-bind:tap='handleCaptureinner3' bindtap='handleBindinner3'>我是内部3
+    </view>
+  </view>
+  我是外面的1
 </view>
