@@ -2,6 +2,7 @@
   "usingComponents": {
     "cpn-style": "/components/cpn-style/cpn-style",
     "cpn-prop": "/components/cpn-prop/cpn-prop",
-    "cpn-event": "/components/cpn-event/cpn-event"
+    "cpn-event": "/components/cpn-event/cpn-event",
+    "w-tab-control": "/components/w-tab-control/w-tab-control"
   }
 }

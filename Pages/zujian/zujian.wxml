@@ -19,4 +19,9 @@
 <view>当前计数:{{mycount}}</view>
 <cpn-event bind:increment='myIncrement'/>
 
+<!-- 06（掌握）组件化-tab-ontrol组件练习（23分钟） -->
 
+<!-- <w-tab-control titles="{{['王祖贤','张天爱','陈钰琪']}}"/> -->
+
+<w-tab-control titles="{{['王祖贤','张天爱','陈钰琪']}}"
+ bind:itemClick='handleClick'/>

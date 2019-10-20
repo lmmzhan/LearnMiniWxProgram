@@ -1,0 +1,17 @@
+<!--components/w-tab-control/w-tab-control.wxml-->
+<!-- <text>components/w-tab-control/w-tab-control.wxml</text> -->
+
+<!-- {{currentIndex==index?'active':''}}  三目运算符，判断哪个tab 变色active
+   bindtap='handleTabClick' 点击事件 
+    data-itemindex='{{index}} 将index 传递过去，赋值给currentIndex，为了实时变化
+      <text> {{item}}</text> 为了设置下划线的大小
+. -->
+<view class='tab-control'>
+  <block wx:for='{{titles}}' wx:key='{{index}}'>
+    <view class="tab-item {{currentIndex==index?'active':''}}"
+          bindtap='handleTabClick'
+          data-itemindex='{{index}}'>
+          <text> {{item}}</text>
+    </view>
+  </block>
+</view>

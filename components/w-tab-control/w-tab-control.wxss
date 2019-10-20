@@ -1,0 +1,25 @@
+/* components/w-tab-control/w-tab-control.wxss */
+
+.tab-control {
+  font-size: 36rpx;
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  color: red;
+  /* 红色下滑线 */
+  /*border-bottom:6rpx solid red;  */
+}
+
+/* 写到这里更方便调节大小 */
+.active text {
+  padding: 20rpx 30rpx;
+  border-bottom: 6rpx solid red;
+}
