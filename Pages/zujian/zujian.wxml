@@ -25,3 +25,13 @@
 
 <w-tab-control titles="{{['王祖贤','张天爱','陈钰琪']}}"
  bind:itemClick='handleClick'/>
+
+<!-- 07 获取组件对象-->
+<button bindtap='handleIncNum'>修改组件内的计数</button>
+<cpn-sel class='sel-class'></cpn-sel>
+
+
+
+
+
+
