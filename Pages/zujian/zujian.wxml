@@ -30,8 +30,25 @@
 <button bindtap='handleIncNum'>修改组件内的计数</button>
 <cpn-sel class='sel-class'></cpn-sel>
 
+<!-- 08 插槽 -->
+<!-- <cpn-slot> -->
+<!-- <view>我是谁，我是插入的插槽里的元素么</view>
+<slider value='60'></slider>
+</cpn-slot>
+ -->
+<cpn-slot>
+<slider value='60'></slider>
+</cpn-slot>
 
+<!-- 09 插槽 -->
+<!-- <cpn-slots>
+<button>我是插入的元素</button>
+</cpn-slots> -->
 
+<cpn-slots>
+<view slot='myslot2'>我能不能显示</view>
+<view slot='myslot1'>我zailage给你加入</view>
+</cpn-slots>
 
 
 

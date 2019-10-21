@@ -1,0 +1,5 @@
+<!--components/cpn-slot/cpn-slot.wxml-->
+<!-- <text>components/cpn-slot/cpn-slot.wxml</text> -->
+<view>我是组件的头布局</view>
+<slot/>
+<view>我是尾布局</view>

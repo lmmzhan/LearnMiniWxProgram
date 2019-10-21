@@ -4,6 +4,8 @@
     "cpn-prop": "/components/cpn-prop/cpn-prop",
     "cpn-event": "/components/cpn-event/cpn-event",
     "w-tab-control": "/components/w-tab-control/w-tab-control",
-    "cpn-sel": "/components/cpn-sel/cpn-sel"
+    "cpn-sel": "/components/cpn-sel/cpn-sel",
+    "cpn-slot": "/components/cpn-slot/cpn-slot",
+    "cpn-slots": "/components/cpn-slots/cpn-slots"
   }
 }

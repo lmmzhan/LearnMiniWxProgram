@@ -1,0 +1,10 @@
+/* components/cpn-slots/cpn-slots.wxss */
+.slot1{
+  color: red
+}
+.slot2{
+  color: blue
+}
+.slot3{
+  color: green
+}
