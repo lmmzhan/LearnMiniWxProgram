@@ -18,14 +18,16 @@ Page({
    */
   onLoad: function(options) {
     // get_data_origin();
-
+    // 1) 对原生的方式的发送网络请求
+    // 2）、使用封装的reqest发送网络请求，
+    // Promisse最大的好处就是防止出现回调地狱
     request({
       url: "http://123.207.32.32:8000/recommend"
-    }).then(res =>{
-       console.log('接口回调回来了',res)
-     }).catch(err =>{
-       console.log('接口回调回来了', err)
-     })
+    }).then(res => {
+      console.log('接口回调回来了', res)
+    }).catch(err => {
+      console.log('接口回调回来了', err)
+    })
   },
 
   get_data_origin() {

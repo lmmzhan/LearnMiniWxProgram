@@ -1,6 +1,7 @@
 {
   "pages": [
-   "Pages/net/net",
+    "Pages/showtoast/showtoast",
+    "Pages/net/net",
     "Pages/zujian/zujian",
     "Pages/touch/touch",
     "Pages/wxs/wxs",
@@ -14,7 +15,8 @@
     "Pages/button/button",
     "Pages/text/text",
     "Pages/home/home",
-    "Pages/mine/mine"
+    "Pages/mine/mine",
+    "Pages/shottoast/showtoast"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff0000",

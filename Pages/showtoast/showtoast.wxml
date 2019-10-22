@@ -1,0 +1,9 @@
+<!--Pages/shottoast/showtoast.wxml-->
+<!-- <text>Pages/shottoast/showtoast.wxml</text> -->
+
+<button>按钮</button>
+
+<button size='mini' bindtap='handleShowToast'>showToast </button>
+<button size='mini' bindtap='handleShowModal'>showModal </button>
+<button size='mini' bindtap='handleShowLoading'>showLoading </button>
+<button size='mini' bindtap='handleShowActionSheet'>showActionSheet </button>
