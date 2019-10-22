@@ -7,3 +7,6 @@
 <button size='mini' bindtap='handleShowModal'>showModal </button>
 <button size='mini' bindtap='handleShowLoading'>showLoading </button>
 <button size='mini' bindtap='handleShowActionSheet'>showActionSheet </button>
+
+<!-- 分享的按钮 -->
+<button size='mini' open-type='share'>分享按钮</button>
