@@ -1,5 +1,6 @@
 {
   "pages": [
+   "Pages/net/net",
     "Pages/zujian/zujian",
     "Pages/touch/touch",
     "Pages/wxs/wxs",
