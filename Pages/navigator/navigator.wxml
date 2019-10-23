@@ -1,7 +1,7 @@
 <!--Pages/navigator/navigator.wxml-->
 <!-- <text>Pages/navigator/navigator.wxml</text> -->
 
-<navigator url='/Pages/showtoast/showtoast'>普通跳转了</navigator>
+<navigator url='/Pages/showtoast/showtoast?name=why&age=18'>普通跳转了</navigator>
 <!-- redirect 关闭当前页面，跳转到应用页面，但是不允许跳转到tabbar页面，并且不能返回 -->
 <navigator url='/Pages/showtoast/showtoast' open-type='redirect'>redirect跳转到非tab页面</navigator>
 
@@ -10,3 +10,7 @@
 
 <!-- reLaunch 关闭所有的页面，打开应用中的某个页面，（直接展示某个页面，并且可以跳转到tabBar页面） -->
 <navigator url='/Pages/zujian/zujian' open-type='reLaunch'>reLaunch跳转</navigator>
+
+<view>{{title}}</view>
+
+<button size='mini' bindtap='handleGoPage'>点我可以方法跳转哦</button>

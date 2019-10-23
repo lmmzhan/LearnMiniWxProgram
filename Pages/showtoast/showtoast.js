@@ -8,6 +8,32 @@ Page({
 
   },
 
+  // 十一节 02页面跳转-跳转过程数据传递
+  onLoad: function(options) {
+    console.log('获取的传值：', options)
+  },
+  // 十一节 02页面跳转-跳转过程数据传递
+  onUnload() {
+    // 1、获取首页的页面对象
+    const pages = getCurrentPages()
+    // console.log('onUnload', pages)
+    const from = pages[pages.length - 2]
+    console.log('获取的from:',from)
+    // 2。调用页面内对象的Data
+
+    from.setData({
+      title:'料青山看我应如是'
+    })
+
+  },
+  // 方法返回
+  handleGoBack(){
+    wx.navigateBack({
+      data:1
+    })
+
+  },
+
   handleShowToast() {
     wx.showToast({
       title: '我是标题',
@@ -69,7 +95,7 @@ Page({
     })
   },
 
-// 分享的代码
+  // 分享的代码
   onShareAppMessage(options) {
     return {
       title: '你好，我来分享',
