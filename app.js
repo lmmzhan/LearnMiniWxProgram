@@ -11,7 +11,7 @@ App({
     const token = wx.getStorageSync(TOKEN)
     //有token,并要去判断是否过期
     if (token && token.length != 0) {
-      this.checkToken()
+      // this.checkToken()
     } else {
       this.myLogin()
     }

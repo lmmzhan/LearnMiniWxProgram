@@ -1,5 +1,6 @@
 {
   "pages": [
+    "Pages/navigator/navigator",
     "Pages/showtoast/showtoast",
     "Pages/net/net",
     "Pages/zujian/zujian",
@@ -15,8 +16,8 @@
     "Pages/button/button",
     "Pages/text/text",
     "Pages/home/home",
-    "Pages/mine/mine",
-    "Pages/shottoast/showtoast"
+    "Pages/mine/mine"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff0000",
@@ -33,10 +34,12 @@
     "selectedColor": "#ff4777",
     "list": [
       {
-        "pagePath": "Pages/home/home",
-        "text": "首页",
-        "iconPath": "assets/home/iv_complete_nor.png",
-        "selectedIconPath": "assets/home/iv_complete_sel.png"
+  
+        "pagePath": "Pages/navigator/navigator",
+        "text": "跳转测试页面",
+        "iconPath": "assets/home/iv_evaluate_nor.png",
+        "selectedIconPath": "assets/home/iv_evaluate_sel.png"
+
       },
       {
         "pagePath": "Pages/mine/mine",

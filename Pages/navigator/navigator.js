@@ -1,4 +1,4 @@
-// Pages/shottoast/showtoast.js
+// Pages/navigator/navigator.js
 Page({
 
   /**

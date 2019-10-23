@@ -2,6 +2,8 @@
 <!-- <text>Pages/shottoast/showtoast.wxml</text> -->
 
 <button>按钮</button>
+//返回按钮
+<navigator open-type='navigateBack' delta='1'>返回</navigator>
 
 <button size='mini' bindtap='handleShowToast'>showToast </button>
 <button size='mini' bindtap='handleShowModal'>showModal </button>
