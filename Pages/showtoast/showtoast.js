@@ -73,7 +73,7 @@ Page({
   onShareAppMessage(options) {
     return {
       title: '你好，我来分享',
-      imageUrl: '/Pages/assets/home/add.png'
+      // imageUrl: '/Pages/assets/home/add.png'
       // imageUrl: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=1ba7eb8df7f2b211f0238d1cabe90e5d/fd039245d688d43f8c0b1c0c711ed21b0ff43ba9.jpg'
     }
   }
